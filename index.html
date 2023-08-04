@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window UI</title>
+    <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="./src/assets/windows.svg" type="image/x-icon">
+</head>
+<body>
+    <div id="window">
+        <div class="window-softwares">
+            <img src="./src/assets/files.png">
+            <img src="./src/assets/folder.png">
+            <img src="./src/assets/python.png">
+        </div>
+        <div id="taskbar">
+            <div class="taskbar-left">
+                <div class="main-win">
+                    <img src="./src/assets/windows.svg" class="win-logo">
+                    <div class="input-wrap">
+                        <input type="text" placeholder="Type here to search" autocomplete="off" spellcheck="false">
+                        <img src="./src/assets/lemon.png">
+                    </div>
+                </div>
+                <div class="side-apps">
+                    <img src="./src/assets/files.png">
+                    <img src="./src/assets/calendar.png">
+                    <img src="./src/assets/edge.png">
+                    <img src="./src/assets/calculator.png">
+                </div>
+            </div>
+
+            <div class="window-logo-popup">
+                <div class="user-options">
+                    <div class="option-top">
+                        <i class="fa fa-bars"></i>
+                        <h2>Start</h2>
+                    </div>
+                    <div class="option-bottom">
+                        <div class="profile">
+                            <img src="" class="profile_picture">
+                        </div>
+                        <div class="file">
+                            <!-- <i class="fa fa-file-o" id="fa-file-o"></i>
+                            <h2>Documents</h2> -->
+                            <i class="fa fa-moon-o"></i>
+                        </div>
+                        <div class="picture">
+                            <i class="fa fa-picture-o"></i>
+                            <h2>Pictures</h2>
+                        </div>
+                        <div class="settings">
+                            <i class="fa fa-cog"></i>
+                            <h2>Settings</h2>
+                        </div>
+                        <div class="power">
+                            <i class="fa fa-power-off"></i>
+                            <h2>Power</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="user-apps">
+                    <h1>Recently added</h1>
+                    <div class="app-wrap">
+                        <img src="./src/assets/acrobat.png">
+                        <h2>Adobe Acrobat Reader</h2>
+                    </div>
+                    <div class="app-wrap">
+                        <img src="./src/assets/telegram.png">
+                        <h2>Telegram</h2>
+                    </div>
+                    <h3>A</h3>
+                    <div class="app-wrap">
+                        <img src="./src/assets/acrobat.png">
+                        <h2>Adobe Acrobat Reader</h2>
+                    </div>
+                    <div class="app-wrap">
+                        <img src="./src/assets/bridge.png">
+                        <h2>Adobe Bridge</h2>
+                    </div>
+                    <div class="app-wrap">
+                        <img src="./src/assets/dreamweaver.png">
+                        <h2>Adobe Dreamweaver</h2>
+                    </div>
+                    <div class="app-wrap">
+                        <img src="./src/assets/flash.png">
+                        <h2>Adobe Flash</h2>
+                    </div>
+                    <div class="app-wrap">
+                        <img src="./src/assets/illustrator.png">
+                        <h2>Adobe Illustrator</h2>
+                    </div>
+                    <div class="app-wrap">
+                        <img src="./src/assets/photoshop.png">
+                        <h2>Adobe Photoshop</h2>
+                    </div>                    
+                    <h3>C</h3>
+                    <div class="app-wrap">
+                        <img src="./src/assets/calculator.png">
+                        <h2>Calculator</h2>
+                    </div>
+                    <div class="app-wrap">
+                        <img src="./src/assets/calendar.png">
+                        <h2>Calendar</h2>
+                    </div>
+                    <div class="app-wrap">
+                        <img src="./src/assets/clock.png">
+                        <h2>Clock</h2>
+                    </div>
+                    <div class="app-wrap">
+                        <img src="./src/assets/chrome.png">
+                        <h2>Chrome</h2>
+                    </div>
+                    <h3>E</h3>
+                    <div class="app-wrap">
+                        <img src="./src/assets/edge.png">
+                        <h2>Edge</h2>
+                    </div>
+                    <div class="app-wrap">
+                        <img src="./src/assets/email.png">
+                        <h2>Email</h2>
+                    </div>
+                    <h3>F</h3>
+                    <div class="app-wrap">
+                        <img src="./src/assets/feedback.png">
+                        <h2>Feedback</h2>
+                    </div>
+                    <div class="app-wrap">
+                        <img src="./src/assets/firefox.png">
+                        <h2>Firefox</h2>
+                    </div>
+                    <h3>G</h3>
+                    <div class="app-wrap">
+                        <img src="./src/assets/gallery.png">
+                        <h2>Gallery</h2>
+                    </div>
+                    <div class="app-wrap">
+                        <img src="./src/assets/gmail.png">
+                        <h2>Gmail</h2>
+                    </div>
+                </div>
+                
+                <div class="user-shortcuts">
+                    <h1>Productivity</h1>
+                    <div class="box-productivity-wrap">
+                        <div class="box1 box">
+                            <img src="./src/assets/email.png">
+                            <img src="./src/assets/maps.png">
+                            <img src="./src/assets/clock.png">
+                            <img src="./src/assets/gmail.png">
+                            <img src="./src/assets/firefox.png">
+                            <img src="./src/assets/camera.png">
+                            <img src="./src/assets/skype.png">
+                        </div>
+                        <div class="box2 box">
+                            <img src="./src/assets/photoshop.png">
+                            <img src="./src/assets/illustrator.png">
+                            <img src="./src/assets/dreamweaver.png">
+                            <img src="./src/assets/bridge.png">
+                            <img src="./src/assets/flash.png">
+                        </div>
+                        <div class="box3 box  box-com">
+                            <img src="./src/assets/solitaire.png">
+                            <h3>Solitaire</h3>
+                        </div>
+                        <div class="box4 box box-com">
+                            <img src="./src/assets/edge.png">
+                            <h3>Microsoft Edge</h3>
+                        </div>
+                        <div class="box5 box box-com">
+                            <img src="./src/assets/gallery.png">
+                            <h3>Photos</h3>
+                        </div>
+                        <!-- <div class="box6 box"></div> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="taskbar-right">
+                <div class="left-controls">
+                    <!-- <i class="fa fa-moon-o"></i> -->
+                    <i class="fa fa-angle-up"></i>
+                    <i class="fa fa-microphone"></i>
+                    <i class="fa fa-battery-half"></i>
+                    <i class="fa fa-wifi"></i>
+                    <i class="fa fa-volume-up"></i>
+                    <div class="time-date-wrap">
+                        <div class="time"></div>
+                        <div class="date"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./src/script.js" defer type="text/javascript"></script>
+</body>
+</html>

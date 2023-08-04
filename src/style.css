@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Segoe UI";
+  src: url("./assets/segoe-ui-webfont/Segoe UI.woff");
+}
+#window {
+  font-family: "Segoe UI";
+  background-image: url("./assets/wallpaper.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+#window .window-softwares {
+  width: fit-content;
+  padding: 10px 15px;
+  height: calc(100vh - 40px);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+#window .window-softwares img {
+  width: 45px;
+  height: 45px;
+}
+#window #taskbar {
+  width: 100%;
+  height: 40px;
+  position: absolute;
+  bottom: 0;
+  background-color: #CBCBCB;
+  display: flex;
+  align-items: center;
+  z-index: 20;
+  justify-content: space-between;
+}
+#window #taskbar .taskbar-left {
+  display: flex;
+  align-items: center;
+}
+#window #taskbar .main-win {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#window #taskbar .main-win .input-wrap {
+  display: flex;
+  padding: 4px 8px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  align-items: center;
+  background-color: #fff;
+}
+#window #taskbar .main-win input[type=text] {
+  font-family: "Segoe UI";
+  width: 250px;
+  outline: none;
+  height: 100%;
+  padding: 0 4px;
+  border: 1px solid transparent;
+  font-size: 16px;
+  cursor: pointer;
+}
+#window #taskbar .main-win img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+#window #taskbar .win-logo {
+  margin: 0 10px;
+}
+#window #taskbar .side-apps {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+  gap: 15px;
+}
+#window #taskbar .side-apps img {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}
+#window #taskbar .window-logo-popup {
+  position: fixed;
+  bottom: 40px;
+  left: 0;
+  width: 55%;
+  height: 80vh;
+  background-color: #C5DEEB;
+  transform: translateY(1000px);
+  transition: all 0.4s ease-in-out;
+  opacity: 0;
+  z-index: -1;
+  display: flex;
+  flex-direction: row;
+}
+#window #taskbar .window-logo-popup .user-options {
+  width: 45px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+}
+#window #taskbar .window-logo-popup .user-options .option-bottom {
+  display: flex;
+  align-items: center;
+}
+#window #taskbar .window-logo-popup .user-options i {
+  font-size: 20px;
+  font-weight: 400;
+}
+#window #taskbar .window-logo-popup .user-options h2 {
+  font-size: 16px;
+  display: none;
+}
+#window #taskbar .window-logo-popup .user-options .option-top,
+#window #taskbar .window-logo-popup .user-options .file,
+#window #taskbar .window-logo-popup .user-options .picture,
+#window #taskbar .window-logo-popup .user-options .settings,
+#window #taskbar .window-logo-popup .user-options .power {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+#window #taskbar .window-logo-popup .user-options .profile {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+#window #taskbar .window-logo-popup .user-options .profile img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  object-fit: covers;
+}
+#window #taskbar .window-logo-popup .user-options .option-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+#window #taskbar .window-logo-popup .user-apps {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  padding: 0px 15px 10px 15px;
+  transition: all 0.2s ease-in-out;
+}
+#window #taskbar .window-logo-popup .user-apps h1 {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 10px 0;
+}
+#window #taskbar .window-logo-popup .user-apps h2 {
+  font-size: 14px;
+  font-weight: 400;
+}
+#window #taskbar .window-logo-popup .user-apps h3 {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 10px 0;
+  margin-left: 12px;
+}
+#window #taskbar .window-logo-popup .user-apps .app-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  height: 35px;
+  padding: 20px 0;
+  transition: all 0.2s ease-in-out;
+}
+#window #taskbar .window-logo-popup .user-apps .app-wrap img {
+  width: 34px;
+  height: 34px;
+  object-position: center;
+  object-fit: contain;
+}
+#window #taskbar .window-logo-popup .user-apps .app-wrap:hover {
+  background-color: rgba(255, 255, 255, 0.5058823529);
+  cursor: pointer;
+}
+#window #taskbar .window-logo-popup .user-apps:hover {
+  overflow: auto;
+}
+#window #taskbar .window-logo-popup .user-shortcuts {
+  width: 47%;
+}
+#window #taskbar .window-logo-popup .user-shortcuts h1 {
+  margin: 10px 15px;
+  font-size: 14px;
+  font-weight: 400;
+}
+#window #taskbar .window-logo-popup .user-shortcuts .box-productivity-wrap {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+#window #taskbar .window-logo-popup .user-shortcuts .box {
+  width: 95px;
+  height: 95px;
+  background-color: rgba(255, 255, 255, 0.5058823529);
+  padding: 5px;
+  border: 1px solid transparent;
+}
+#window #taskbar .window-logo-popup .user-shortcuts .box:hover {
+  border: 1px solid white;
+  cursor: pointer;
+}
+#window #taskbar .window-logo-popup .user-shortcuts .box1 img {
+  width: 24px;
+  height: 24px;
+}
+#window #taskbar .window-logo-popup .user-shortcuts .box2 img {
+  width: 24px;
+  height: 24px;
+}
+#window #taskbar .window-logo-popup .user-shortcuts .box-com {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+#window #taskbar .window-logo-popup .user-shortcuts .box-com img {
+  width: 50%;
+}
+#window #taskbar .window-logo-popup .user-shortcuts .box-com h3 {
+  font-size: 12px;
+}
+#window #taskbar .window-logo-popup.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+#window #taskbar .left-controls {
+  margin: 0 10px 0 0;
+  text-align: center;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#window #taskbar .left-controls i {
+  font-size: 15px;
+  cursor: pointer;
+}
+#window #taskbar.dark {
+  background-color: rgba(0, 0, 0, 0.8705882353) !important;
+  font-weight: 400;
+  color: #fff !important;
+}
+#window .window-logo-popup.dark {
+  background-color: #272829 !important;
+  color: #fff;
+  font-weight: 400;
+}
+#window .box.dark {
+  background-color: #61677A !important;
+  font-weight: 400;
+}
+#window .fa {
+  font-weight: 300;
+}
+
+/*# sourceMappingURL=style.css.map */
