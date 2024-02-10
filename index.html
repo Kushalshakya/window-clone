@@ -4,22 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Window UI</title>
-    <link rel="stylesheet" href="./src/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="./src/assets/windows.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./src/bootstrap-4.0.0/css/bootstrap.css">
+    <link rel="stylesheet" href="./src/style.css">
+    <script src="./src/jquery-3.7.1.js"></script>
+    <script src="./src/bootstrap-4.0.0/js/bootstrap.js"></script>
 </head>
 <body>
-    <div id="window">
-        <div class="window-softwares">
+    <div class="unstable-screen d-md-none d-block position-fixed top-0 bg-primary w-100 h-100">
+        
+    </div>
+    <div id="window" class="window d-md-block d-none">
+        <div class="window-softwares d-flex flex-column flex-wrap">
             <img src="./src/assets/files.png">
             <img src="./src/assets/folder.png">
             <img src="./src/assets/python.png">
         </div>
-        <div id="taskbar">
-            <div class="taskbar-left">
-                <div class="main-win">
+        <div id="taskbar" class="taskbar position-fixed w-100 d-flex align-items-center justify-content-between">
+            <div class="taskbar-leftm d-flex align-items-center">
+                <div class="main-win d-flex flex-row align-items-center">
                     <img src="./src/assets/windows.svg" class="win-logo">
-                    <div class="input-wrap">
+                    <div class="input-wrap d-flex align-items-center bg-white">
                         <input type="text" placeholder="Type here to search" autocomplete="off" spellcheck="false">
                         <img src="./src/assets/lemon.png">
                     </div>
@@ -33,18 +39,16 @@
             </div>
 
             <div class="window-logo-popup">
-                <div class="user-options">
+                <div class="user-options d-flex align-items-center justify-content-between flex-column h-100">
                     <div class="option-top">
                         <i class="fa fa-bars"></i>
                         <h2>Start</h2>
                     </div>
-                    <div class="option-bottom">
+                    <div class="option-bottom d-flex align-items-center flex-column">
                         <div class="profile">
                             <img src="" class="profile_picture">
                         </div>
                         <div class="file">
-                            <!-- <i class="fa fa-file-o" id="fa-file-o"></i>
-                            <h2>Documents</h2> -->
                             <i class="fa fa-moon-o"></i>
                         </div>
                         <div class="picture">
@@ -144,7 +148,7 @@
                 
                 <div class="user-shortcuts">
                     <h1>Productivity</h1>
-                    <div class="box-productivity-wrap">
+                    <div class="box-productivity-wrap m-auto d-flex flex-wrap">
                         <div class="box1 box">
                             <img src="./src/assets/email.png">
                             <img src="./src/assets/maps.png">
@@ -161,26 +165,24 @@
                             <img src="./src/assets/bridge.png">
                             <img src="./src/assets/flash.png">
                         </div>
-                        <div class="box3 box  box-com">
+                        <div class="box3 box  box-com d-flex flex-column align-items-center justify-content-center">
                             <img src="./src/assets/solitaire.png">
                             <h3>Solitaire</h3>
                         </div>
-                        <div class="box4 box box-com">
+                        <div class="box4 box box-com d-flex flex-column align-items-center justify-content-center">
                             <img src="./src/assets/edge.png">
                             <h3>Microsoft Edge</h3>
                         </div>
-                        <div class="box5 box box-com">
+                        <div class="box5 box box-com d-flex flex-column align-items-center justify-content-center">
                             <img src="./src/assets/gallery.png">
                             <h3>Photos</h3>
                         </div>
-                        <!-- <div class="box6 box"></div> -->
                     </div>
                 </div>
             </div>
 
             <div class="taskbar-right">
-                <div class="left-controls">
-                    <!-- <i class="fa fa-moon-o"></i> -->
+                <div class="left-controls d-flex align-items-center text-center">
                     <i class="fa fa-angle-up"></i>
                     <i class="fa fa-microphone"></i>
                     <i class="fa fa-battery-half"></i>
