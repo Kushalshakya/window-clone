@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -8,8 +9,11 @@
   font-family: "Segoe UI";
   src: url("./assets/segoe-ui-webfont/Segoe UI.woff");
 }
+body {
+  font-family: "Poppins";
+}
+
 .window {
-  font-family: "Segoe UI";
   background-image: url("./assets/wallpaper.jpg");
   background-position: center;
   background-size: cover;
@@ -37,7 +41,7 @@
   border: 1px solid rgba(0, 0, 0, 0.3);
 }
 .window .taskbar .main-win input[type=text] {
-  font-family: "Segoe UI";
+  font-family: "Poppins";
   width: 250px;
   outline: none;
   height: 100%;

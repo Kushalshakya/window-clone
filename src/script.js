@@ -66,4 +66,3 @@ function themeSwitch(){
 moonBtnEl.addEventListener("click", () => {
     themeSwitch();
 });
-
