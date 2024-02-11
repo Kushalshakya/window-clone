@@ -66,3 +66,17 @@ function themeSwitch(){
 moonBtnEl.addEventListener("click", () => {
     themeSwitch();
 });
+
+function changeWallpaper(){
+    const folderPanelContentImg = document.querySelectorAll('.folder-panel-content img');
+    const changeWindow = document.querySelector('.window');
+    
+    folderPanelContentImg.forEach((img) => {
+        console.log(img.src)
+        img.addEventListener('click', () => {
+            changeWindow.style.backgroundImage = `url(${img.src})`;
+        })
+    })
+}
+
+changeWallpaper();
